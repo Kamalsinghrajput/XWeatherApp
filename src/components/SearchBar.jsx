@@ -37,7 +37,7 @@ const SearchBar = ({ onSearch, loading }) => {
           Search
         </button>
       </div>
-      {loading && <p style={{ marginTop: "20px" }}>Loading data…</p>}
+  {loading && <p style={{ marginTop: "20px" }}>Loading data...</p>}
     </div>
   );
 };
