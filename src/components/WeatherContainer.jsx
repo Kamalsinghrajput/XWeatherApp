@@ -10,8 +10,8 @@ const WeatherContainer = () => {
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async (city) => {
-    setLoading(true);
     setWeather(null);
+    setLoading(true);
     try {
       const response = await fetch(`${API_URL}?key=${API_KEY}&q=${encodeURIComponent(city)}`);
       if (!response.ok) throw new Error("API error");
